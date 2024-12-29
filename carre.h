@@ -1,5 +1,5 @@
 /// @file carre.h
-/// @brief Modifier ou Afficher les valeurs d'un carré définis
+/// @brief Modifier ou afficher les valeurs d'un carré définis
 /// @details On peut définir les cotés du carré, les afficher ou encore les déplacer
 /// @author Trompier Téo
 /// @version 0.1 - Visual Studio 2019
