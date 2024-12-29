@@ -5,6 +5,7 @@
 /// @version 0.1 - Visual Studio 2019
 /// @date 29/12/2024
 
+#pragma once
 #include <iostream>
 
 /// @class CCarre
