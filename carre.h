@@ -1,69 +1,69 @@
-/// @file carre.h
-/// @brief Modifier ou afficher les valeurs d'un carré définis
-/// @details On peut définir les cotés du carré, les afficher ou encore les déplacer
-/// @author Trompier Téo
+ï»¿/// @file carre.h
+/// @brief Modifier ou afficher les valeurs d'un carrÃ© dÃ©finis
+/// @details On peut dÃ©finir les cotÃ©s du carrÃ©, les afficher ou encore les dÃ©placer
+/// @author Trompier TÃ©o
 /// @version 0.1 - Visual Studio 2019
 /// @date 29/12/2024
 
 #include <iostream>
 
 /// @class CCarre
-/// @brief Classe représentant un carré avec des coordonnées et une longueur de côté.
+/// @brief Classe reprÃ©sentant un carrÃ© avec des coordonnÃ©es et une longueur de cÃ´tÃ©.
 class CCarre {
 private:
-    /// @brief Coordonnée x du sommet supérieur gauche.
+    /// @brief CoordonnÃ©e x du sommet supÃ©rieur gauche.
     int sx;
 
-    /// @brief Coordonnée y du sommet supérieur gauche.
+    /// @brief CoordonnÃ©e y du sommet supÃ©rieur gauche.
     int sy;
 
-    /// @brief Longueur du côté du carré.
+    /// @brief Longueur du cÃ´tÃ© du carrÃ©.
     int cote;
 
 public:
-    /// @brief Constructeur par défaut.
+    /// @brief Constructeur par dÃ©faut.
     CCarre();
 
-    /// @brief Constructeur paramétré.
-    /// @param[in] sx1 Coordonnée x du sommet supérieur gauche.
-    /// @param[in] sy1 Coordonnée y du sommet supérieur gauche.
-    /// @param[in] cote1 Longueur du côté du carré.
+    /// @brief Constructeur paramÃ©trÃ©.
+    /// @param[in] sx1 CoordonnÃ©e x du sommet supÃ©rieur gauche.
+    /// @param[in] sy1 CoordonnÃ©e y du sommet supÃ©rieur gauche.
+    /// @param[in] cote1 Longueur du cÃ´tÃ© du carrÃ©.
     CCarre(int sx1, int sy1, int cote1);
 
-    /// @brief Définit la coordonnée x du sommet supérieur gauche.
-    /// @param[in] sx1 Nouvelle valeur de la coordonnée x.
+    /// @brief DÃ©finit la coordonnÃ©e x du sommet supÃ©rieur gauche.
+    /// @param[in] sx1 Nouvelle valeur de la coordonnÃ©e x.
     void Setsx(int sx1);
 
-    /// @brief Définit la coordonnée y du sommet supérieur gauche.
-    /// @param[in] sy1 Nouvelle valeur de la coordonnée y.
+    /// @brief DÃ©finit la coordonnÃ©e y du sommet supÃ©rieur gauche.
+    /// @param[in] sy1 Nouvelle valeur de la coordonnÃ©e y.
     void Setsy(int sy1);
 
-    /// @brief Définit la longueur du côté du carré.
-    /// @param[in] cote1 Nouvelle longueur du côté.
+    /// @brief DÃ©finit la longueur du cÃ´tÃ© du carrÃ©.
+    /// @param[in] cote1 Nouvelle longueur du cÃ´tÃ©.
     void Setcote(int cote1);
 
-    /// @brief Affiche les caractéristiques du carré.
+    /// @brief Affiche les caractÃ©ristiques du carrÃ©.
     void Afficher();
 
-    /// @brief Récupère la coordonnée x du sommet supérieur gauche.
-    /// @param[out] Retourne la coordonnée x actuelle.
+    /// @brief RÃ©cupÃ¨re la coordonnÃ©e x du sommet supÃ©rieur gauche.
+    /// @param[out] Retourne la coordonnÃ©e x actuelle.
     int Getsx();
 
-    /// @brief Récupère la coordonnée y du sommet supérieur gauche.
-    /// @param[out] Retourne la coordonnée y actuelle.
+    /// @brief RÃ©cupÃ¨re la coordonnÃ©e y du sommet supÃ©rieur gauche.
+    /// @param[out] Retourne la coordonnÃ©e y actuelle.
     int Getsy();
 
-    /// @brief Récupère la longueur du côté du carré.
-    /// @param[out] Retourne la longueur actuelle du côté.
+    /// @brief RÃ©cupÃ¨re la longueur du cÃ´tÃ© du carrÃ©.
+    /// @param[out] Retourne la longueur actuelle du cÃ´tÃ©.
     int GetCote();
 
-    /// @brief Déplace le carré dans une direction donnée avec un saut.
-    /// @param[in] direction Direction du déplacement ('N', 'S', 'E', 'O').
-    /// @param[in] saut Distance du déplacement.
+    /// @brief DÃ©place le carrÃ© dans une direction donnÃ©e avec un saut.
+    /// @param[in] direction Direction du dÃ©placement ('N', 'S', 'E', 'O').
+    /// @param[in] saut Distance du dÃ©placement.
     void Deplacer(char direction, int saut);
 
-    /// @brief Déplace le carré en utilisant un vecteur.
-    /// @param[in] dx Déplacement sur l'axe x.
-    /// @param[in] dy Déplacement sur l'axe y.
+    /// @brief DÃ©place le carrÃ© en utilisant un vecteur.
+    /// @param[in] dx DÃ©placement sur l'axe x.
+    /// @param[in] dy DÃ©placement sur l'axe y.
     void Deplacer(int dx, int dy);
 };
